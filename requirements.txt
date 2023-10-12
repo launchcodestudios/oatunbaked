@@ -2,4 +2,3 @@ wheel
 flask
 apscheduler
 sendgrid
-python-dotenv
