@@ -2,26 +2,104 @@
 <html lang="en-US">
 	<head>
 		<meta charset="utf-8">
-		
 		<link rel="shortcut icon" href="static/favicon.ico">
 		<link rel="apple-touch-icon" href="static/apple-touch-icon.png">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		
 		<meta name="dcterms.date" content="2023-10-10">
 		<meta name="robots" content="index,follow">
-		<meta name="geo.country" content="US">
-		
+		<meta name="geo.country" content="US">		
 		<meta name="description" content="">
 		<meta name="keywords" content="">
-
+		<meta name="owner" content="Gina Pettaris">
+		<meta name="robots" content="index, follow">
+		<meta property="og:image" content="static/logo.png" />
+		<meta property="og:type" content="website" />
+		<meta property="og:locale" content="en_US" />
+		
 		<title>Oat and Co.</title>
 		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500&display=swap" rel="stylesheet">
+		
 		<link href="static/oats-bundle.min.css" rel="stylesheet">
-		<script src="static/oats-bundle.min.js"></script>
+		<link href="static/site.css" rel="stylesheet">
 		
 	</head>
-	<body class="pb4 sans-serif">
-		<div>HI there</div>
+	<body class="barlow f4">
+		<div class="bg-mint pv4 ph3">
+			<div class="flex justify-center items-center">
+				<div class="ph4 dn db-l"><img src="static/leadspace-cookie-2x.png" class="db" width="78" alt="cookie"></div>
+				<div class="ph4 dn db-ns"><img src="static/leadspace-oats-2x.png" class="db" width="78" alt="oats"></div>
+				<div class="ph4 dn db-ns"><img src="static/leadspace-cookie-2x.png" class="db" width="78" alt="cookie"></div>
+				<div class="ph4"><img src="static/logo-2x.png" class="db" width="266" alt="Oat and Co. logo"></div>
+				<div class="ph4 dn db-ns"><img src="static/leadspace-cookie-2x.png" class="db" width="78" alt="cookie"></div>
+				<div class="ph4 dn db-ns"><img src="static/leadspace-oats-2x.png" class="db" width="78" alt="oats"></div>
+				<div class="ph4 dn db-l"><img src="static/leadspace-cookie-2x.png" class="db" width="78" alt="cookie"></div>
+			</div>
+			
+			<div class="mt4"><img src="static/leadspace-headline.svg" class="db ml-auto mr-auto" width="500" alt="cookie"></div>
+			
+		</div>
+		
+		<div class="bg-light-mint ph3">
+			<div class="flex justify-center items-center">
+				<a href="#nobakes" class="db f4 mv3 textcolor br b--near-black mr4 pr4">gourmet no-bakes</a>
+				<a href="#treats" class="db f4 mv3 textcolor br b--near-black mr4 pr4">sweet treats</a>
+				<a href="#beverages" class="db f4 mv3 textcolor br b--near-black mr4 pr4">beaverages</a>
+				<a href="#findus" class="db f4 mv3 textcolor">where to find us</a>
+			</div>
+		</div>
+		
+		<div class="bg-oat pv4 ph3">
+			<div class="mw7 tc lh-copy ml-auto mr-auto">
+				<div class="b">WHY OATS?</div>
+				<div>After running a successful bakery & cupcake shop for 8 years, I decided I wanted to focus on creating delicious, gluten-free treats that everyone can enjoy. Oats were the perfect grain to start with. Oats are delicious, versatile and offer many health benefits that regular wheat flour can’t provide. Oat & Co. creates gourmet no bakes, rice crispie treats, edible cookie dough and more! We can’t wait to introduce you to how delicious gluten-free can be.</div>
+			</div>
+			<div class="mt4"><img src="static/xoxo.svg" class="db ml-auto mr-auto" width="100"></div>
+		</div>
+		
+		<div class="pv4 ph3 w-100">
+			<div class="tc">
+				<div><img src="static/headline-nobake.svg" width="400" alt="no-bakes"></div>
+				<div class="mt2">All of our gourmet no-bakes cookies are made with gluten-free oats and wheat free ingredients</div>
+			</div>
+			
+			<div class="mw9 ml-auto mr-auto mt4 flex flex-wrap justify-center">
+				{% for cookie in data.cookies %}
+					{% include 'partial_cookie.html' %}
+				{% endfor %}
+			</div>
+		</div>
+		
+		<div class="mw9 ph5 ml-auto mr-auto">
+			<div class="tc ml-auto mr-auto mh3 pt4 bt bw1 b--mint">
+				<div><img src="static/headline-floof.svg" width="200" alt="Floof"></div>
+				<div class="mt2">Two no-bake cookies with a creamy filling - and yes, they’re gluten-free!</div>
+				
+				<div class="mw9 ml-auto mr-auto mt4 flex flex-wrap justify-center">
+					{% for cookie in data.floofs %}
+						{% include 'partial_cookie.html' %}
+					{% endfor %}
+				</div>
+				
+			</div>
+			
+		</div>
+		
+		<div class="armygreen">
+			
+		</div>
+		
+		<footer>
+			<div class="bg-mint pv4 ph3">
+				<div class="flex justify-center items-center">
+					<div class="ph4"><img src="static/logo-2x.png" class="db" width="133" alt="Oat and Co. logo"></div>
+				</div>
+			</div>
+		</footer>
+		
+		
 	</body>
 </html>
 

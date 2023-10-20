@@ -1,0 +1,19 @@
+.barlow {
+	font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.bg-cookie-oat {
+	background: url('cookie-oat.png') 0 0 / 100% no-repeat;
+}
+
+.bg-cookie-mint {
+	background: url('cookie-mint.png') 0 0 / 100% no-repeat;
+}
+
+.bg-cookie-armygreen {
+	background: url('cookie-armygreen.png') 0 0 / 100% no-repeat;
+}
+
+.bg-cookie-pink {
+	background: url('cookie-pink.png') 0 0 / 100% no-repeat;
+}
