@@ -75,7 +75,28 @@ def home():
 				'name': 'Seasonal floof',
 				'descr': 'seasonal'
 			},
-			
+		],
+		'cookieDoughs': [
+			{
+				'omitRollover': True,
+				'color': 'blue',
+				'name': 'Chocolate chip',
+				'descr': 'TBD'
+			}
+		],
+		'beverages': [
+			{
+				'omitRollover': True,
+				'color': 'pink',
+				'name': 'Apple pie slushie',
+				'descr': 'apple pie filling in apple slushie, topped with strussel crumble'
+			},
+			{
+				'omitRollover': True,
+				'color': 'pink',
+				'name': 'Frozen hot chocolate',
+				'descr': 'chocolate frapé topped with whipped cream & chocolate shavings'
+			}
 		]
 	}
 	return render_template('index.html', data=data)

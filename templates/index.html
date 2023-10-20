@@ -42,27 +42,26 @@
 			
 		</div>
 		
-		<div class="bg-light-mint ph3">
-			<div class="flex justify-center items-center">
-				<a href="#nobakes" class="db f4 mv3 textcolor br b--near-black mr4 pr4">gourmet no-bakes</a>
-				<a href="#treats" class="db f4 mv3 textcolor br b--near-black mr4 pr4">sweet treats</a>
-				<a href="#beverages" class="db f4 mv3 textcolor br b--near-black mr4 pr4">beaverages</a>
-				<a href="#findus" class="db f4 mv3 textcolor">where to find us</a>
-			</div>
+		<div class="flex flex-row-ns flex-column bg-light-mint ph3 pv3 pv0-ns justify-center items-center">
+			<a href="#nobakes" class="f4 mv3 textcolor br-ns b--near-black mr4 pr4 self-stretch">gourmet no-bakes</a>
+			<a href="#treats" class="f4 mv3 textcolor br-ns b--near-black mr4 pr4 self-stretch">sweet treats</a>
+			<a href="#beverages" class="f4 mv3 textcolor br-ns b--near-black mr4 pr4 self-stretch">beaverages</a>
+			<a href="#findus" class="f4 mv3 textcolor self-stretch">where to find us</a>
 		</div>
-		
+	
 		<div class="bg-oat pv4 ph3">
 			<div class="mw7 tc lh-copy ml-auto mr-auto">
 				<div class="b">WHY OATS?</div>
-				<div>After running a successful bakery & cupcake shop for 8 years, I decided I wanted to focus on creating delicious, gluten-free treats that everyone can enjoy. Oats were the perfect grain to start with. Oats are delicious, versatile and offer many health benefits that regular wheat flour can’t provide. Oat & Co. creates gourmet no bakes, rice crispie treats, edible cookie dough and more! We can’t wait to introduce you to how delicious gluten-free can be.</div>
+				<div>After running a successful bakery & cupcake shop for 8 years, I decided I wanted to focus on creating delicious, gluten-free treats that everyone can enjoy. Oats were the perfect grain to start with. Oats are delicious, versatile and offer many health benefits that regular wheat flour can’t provide. Oat & Co. creates gourmet no bakes, rice crispie treats, edible cookie dough and more! 
+					<br>We can’t wait to introduce you to how delicious gluten-free can be.</div>
 			</div>
 			<div class="mt4"><img src="static/xoxo.svg" class="db ml-auto mr-auto" width="100"></div>
 		</div>
 		
-		<div class="pv4 ph3 w-100">
+		<div id="nobakes" class="pv4 ph3 w-100">
 			<div class="tc">
 				<div><img src="static/headline-nobake.svg" width="400" alt="no-bakes"></div>
-				<div class="mt2">All of our gourmet no-bakes cookies are made with gluten-free oats and wheat free ingredients</div>
+				<div class="mt2 lh-copy">All of our gourmet no-bakes cookies are made with gluten-free oats and wheat free ingredients<br>(rollover the cookies to view descriptions)</div>
 			</div>
 			
 			<div class="mw9 ml-auto mr-auto mt4 flex flex-wrap justify-center">
@@ -72,23 +71,56 @@
 			</div>
 		</div>
 		
-		<div class="mw9 ph5 ml-auto mr-auto">
-			<div class="tc ml-auto mr-auto mh3 pt4 bt bw1 b--mint">
-				<div><img src="static/headline-floof.svg" width="200" alt="Floof"></div>
-				<div class="mt2">Two no-bake cookies with a creamy filling - and yes, they’re gluten-free!</div>
-				
-				<div class="mw9 ml-auto mr-auto mt4 flex flex-wrap justify-center">
-					{% for cookie in data.floofs %}
-						{% include 'partial_cookie.html' %}
-					{% endfor %}
-				</div>
-				
+		<div class="w-90 w-80-ns ml-auto mr-auto bt bw2 b--mint"></div>
+			
+		<div class="pv4 ph3 w-100">
+			<div class="tc">
+				<div><img src="static/headline-floof.svg" width="200" alt="Floofs"></div>
+				<div class="mt2">Two no-bake cookies with a cream filling - and yes, they’re gluten-free!</div>
 			</div>
 			
+			<div class="mw9 ml-auto mr-auto mt4 flex flex-wrap justify-center">
+				{% for cookie in data.floofs %}
+					{% include 'partial_cookie.html' %}
+				{% endfor %}
+			</div>
 		</div>
 		
-		<div class="armygreen">
+		<div class="w-90 w-80-ns ml-auto mr-auto bt bw2 b--mint"></div>
 			
+		<div id="treats" class="pv4 ph3 w-100">
+			<div class="tc">
+				<div><img src="static/headline-cookie-dough.svg" width="480" alt="Floofs"></div>
+				<div class="mt2">Gluten-free edible oatmeal cookie dough</div>
+			</div>
+			
+			<div class="mw9 ml-auto mr-auto mt4 flex flex-wrap justify-center">
+				{% for cookie in data.cookieDoughs %}
+					{% include 'partial_cookie.html' %}
+				{% endfor %}
+			</div>
+		</div>
+		
+		<div class="w-90 w-80-ns ml-auto mr-auto bt bw2 b--mint"></div>
+			
+		<div id="beverages" class="pv4 ph3 w-100">
+			<div class="tc">
+				<div><img src="static/headline-beverages.svg" width="180" alt="Beverages"></div>				
+			</div>
+			
+			<div class="mw9 ml-auto mr-auto mt4 flex flex-wrap justify-center">
+				{% for cookie in data.beverages %}
+					{% include 'partial_cookie.html' %}
+				{% endfor %}
+			</div>
+		</div>
+		
+		<div id="findus" class="pv4 ph3 w-100 bg-armygreen">
+			<div class="tc">
+				<div><img src="static/headline-find-us.svg" width="340" alt="Beverages"></div>
+				
+				<div class="mt2 white lh-copy">Upcoming locations and events coming soon.<br>You can also contact us at contact@oatunbaked.com to book us for your private event!</div>
+			</div>
 		</div>
 		
 		<footer>
