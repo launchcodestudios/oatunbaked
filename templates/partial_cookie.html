@@ -1,5 +1,5 @@
 <div class="mh5 mv5 w5 h5 bg-cookie-{{ cookie.color }}">
-	{% if not cookie.omitRollover %}<div class="absolute"><img src="static/cookie.png" class="db pointer cookie-cover" alt="Cookie"></div>{% endif %}
+	{% if not cookie.omitRollover %}<div class="absolute"><img src="static/{% if cookie.staticImage %}{{ cookie.staticImage }} {% else %}cookie.png{% endif %}" class="db pointer cookie-cover" alt="Cookie"></div>{% endif %}
 	<div class="w5 h5 tc flex justify-center items-center">
 		<div class="w4">{{ cookie.descr }}</div>
 	</div>

@@ -78,7 +78,7 @@ def home():
 		],
 		'cookieDoughs': [
 			{
-				'omitRollover': True,
+				'staticImage': 'cookie_doh.png',
 				'color': 'blue',
 				'name': 'Chocolate chip',
 				'descr': 'TBD'
