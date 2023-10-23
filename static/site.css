@@ -1,14 +1,15 @@
 .barlow {
 	font-family: 'Barlow Semi Condensed', sans-serif;
 }
+
 .cookie-cover {
 	width: 268px;
 	transform: translate3d(-2px, -10px,0);
 	opacity: 1;
-	transition: opacity .6s var(--animation-curve);
+	transition: opacity .75s var(--animation-curve);
 }
-.cookie-cover:focus,
-.cookie-cover:hover {
+.menu-item:focus .cookie-cover,
+.menu-item:hover .cookie-cover {
 	opacity: 0;
 }
 

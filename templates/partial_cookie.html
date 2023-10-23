@@ -1,7 +1,7 @@
-<div class="mh5 mv5 w5 h5 bg-cookie-{{ cookie.color }}">
-	{% if not cookie.omitRollover %}<div class="absolute"><img src="static/{% if cookie.staticImage %}{{ cookie.staticImage }} {% else %}cookie.png{% endif %}" class="db pointer cookie-cover" alt="Cookie"></div>{% endif %}
+<div class="mh5 mv5 w5 h5 menu-item bg-cookie-{{ cookie.color }}">
+	{% if not cookie.omitRollover %}<div class="absolute cookie-cover"><img src="static/{% if cookie.staticImage %}{{ cookie.staticImage }} {% else %}cookie.png{% endif %}" class="db" alt="Cookie"></div>{% endif %}
 	<div class="w5 h5 tc flex justify-center items-center">
 		<div class="w4">{{ cookie.descr }}</div>
 	</div>
-	<div class="f3 tc mt3 uppercase ttu">{{ cookie.name }}</div>
+	<div class="f3 tc pt3 ttu">{{ cookie.name }}</div>
 </div>
