@@ -27,6 +27,8 @@ menuItems = {
 		},
 		{
 			'color': 'mint',
+			'staticImage': 'cookie-pb.png',
+			'style': 'transform: scale(1.05)',
 			'name': 'Peanut butter & Nutelly',
 			'descr': 'classic chocolate cookie with peanut butter and nutella'
 		},
@@ -65,7 +67,7 @@ menuItems = {
 	],
 	'cookieDoughs': [
 		{
-			'staticImage': 'cookie_doh.png',
+			'staticImage': 'cookie-doh.png',
 			'color': 'blue',
 			'name': 'Chocolate chip',
 			'descr': 'edible oatmeal chocolate chip cookie dough'
