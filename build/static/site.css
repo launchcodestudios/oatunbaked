@@ -1,0 +1,39 @@
+.barlow {
+	font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.cookie-cover {
+	width: 268px;
+	transform: translate3d(-2px, -10px,0);
+	opacity: 1;
+	transition: opacity .75s var(--animation-curve);
+}
+.menu-item:focus .cookie-cover,
+.menu-item:hover .cookie-cover {
+	opacity: 0;
+}
+
+.bg-cookie-oat {
+	background: url('cookie-oat.png') 0 0 / 100% no-repeat;
+}
+
+.bg-cookie-mint {
+	background: url('cookie-mint.png') 0 0 / 100% no-repeat;
+}
+
+.bg-cookie-armygreen {
+	background: url('cookie-armygreen.png') 0 0 / 100% no-repeat;
+}
+
+.bg-cookie-pink {
+	background: url('cookie-pink.png') 0 0 / 100% no-repeat;
+}
+
+.bg-cookie-blue {
+	background: url('cookie-blue.png') 0 0 / 100% no-repeat;
+}
+
+a:focus,
+a:hover {
+	color: var(--armygreen);
+}
