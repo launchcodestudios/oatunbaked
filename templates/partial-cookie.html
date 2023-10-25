@@ -1,4 +1,4 @@
-<div class="mh5 mv5 w5 h5 menu-item bg-cookie-{{ cookie.color }}">
+<div class="mh5 mv5 w5 h5 menu-item bg-cookie-{{ cookie.color }}" tabindex="0">
 	{% if not cookie.omitRollover %}<div class="absolute cookie-cover"><img src="static/img/{% if cookie.staticImage %}{{ cookie.staticImage }} {% else %}cookie.png{% endif %}" {% if cookie.style %}style="{{ cookie.style }}"{% endif %}class="db" alt="Cookie"></div>{% endif %}
 	<div class="w5 h5 tc flex justify-center items-center">
 		<div class="w4">{{ cookie.descr }}</div>
