@@ -1,45 +1,33 @@
 import os
-
-import shutil
-from distutils.dir_util import copy_tree
-
 import webbrowser
+
 from threading import Timer
 from flask import Flask, send_from_directory
 from dotenv import load_dotenv
 from jinja2 import Environment, PackageLoader
 
 from data import menuItems
- 
+from ssg_utils import generateFile
+
+
 load_dotenv()
 
 app = Flask(__name__)
 
+ENV = Environment(loader=PackageLoader('app'))
 
-def generateFiles():
-	# Blow away build dir and create new clean build.
-	shutil.rmtree('./build')
-	os.makedirs('./build/static')
-	copy_tree('./static', './build/static')
-	
-	# Render index page template and save as file in build dir.
-	env = Environment(loader=PackageLoader('app'))
-	template = env.get_template('index.html')
- 	
-	root = os.path.dirname(os.path.abspath(__file__))
-	filename = os.path.join(root, 'build', 'index.html')
- 	
-	with open(filename, 'w') as fh:
-		fh.write(template.render(data=menuItems))
- 	
- 	
+# NOTE: You (currently) have to view a page to render the flat file for it.
+# Everything below is only used for generating the HTML files and viewing on dev. 
+# Prod is served as flat files from /build/.
+
 @app.route('/')
 def home():
-	generateFiles()
+	fileName = 'index.html'
+	generateFile(ENV, fileName, menuItems)
+	return send_from_directory('build', fileName)
 	
-	return send_from_directory('build', 'index.html')
 	
-
+# Only used for dev. Prod is served as flat files from /build/.
 if __name__ == "__main__":
 	port = int(os.environ.get('PORT', 5000))
 	

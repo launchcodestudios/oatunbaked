@@ -14,26 +14,21 @@
 }
 
 .bg-cookie-oat {
-	background: url('cookie-oat.png') 0 0 / 100% no-repeat;
+	background: url('img/cookie-oat.png') 0 0 / 100% no-repeat;
 }
 
 .bg-cookie-mint {
-	background: url('cookie-mint.png') 0 0 / 100% no-repeat;
+	background: url('img/cookie-mint.png') 0 0 / 100% no-repeat;
 }
 
 .bg-cookie-armygreen {
-	background: url('cookie-armygreen.png') 0 0 / 100% no-repeat;
+	background: url('img/cookie-armygreen.png') 0 0 / 100% no-repeat;
 }
 
 .bg-cookie-pink {
-	background: url('cookie-pink.png') 0 0 / 100% no-repeat;
+	background: url('img/cookie-pink.png') 0 0 / 100% no-repeat;
 }
 
 .bg-cookie-blue {
-	background: url('cookie-blue.png') 0 0 / 100% no-repeat;
-}
-
-a:focus,
-a:hover {
-	color: var(--armygreen);
+	background: url('img/cookie-blue.png') 0 0 / 100% no-repeat;
 }
