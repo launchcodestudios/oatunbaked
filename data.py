@@ -11,6 +11,7 @@ menuItems = {
 			'descr': 'milk chocolate cookie with marshmallows and grahams'
 		},
 		{
+			'staticImage': 'cookie-pumpkin-pie.png',
 			'color': 'oat',
 			'name': 'Pumpkin pie',
 			'descr': 'vanilla pumpkin cookie with cinnamon and spice topped with a candy corn'
@@ -28,7 +29,7 @@ menuItems = {
 		{
 			'color': 'mint',
 			'staticImage': 'cookie-pb.png',
-			'style': 'transform: scale(1.05)',
+			'style': 'transform: scale(1.01) translate3d(0px,3px,0)',
 			'name': 'Peanut butter & Nutelly',
 			'descr': 'classic chocolate cookie with peanut butter and nutella'
 		},
