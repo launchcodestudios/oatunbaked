@@ -11,7 +11,7 @@ menuItems = {
 			'descr': 'milk chocolate cookie with marshmallows and grahams'
 		},
 		{
-			'staticImage': 'cookie-pumpkin-pie.png',
+			'staticImage': 'cookie-pumpkin-pie.webp',
 			'color': 'oat',
 			'name': 'Pumpkin pie',
 			'descr': 'vanilla pumpkin cookie with cinnamon and spice topped with a candy corn'
@@ -28,7 +28,7 @@ menuItems = {
 		},
 		{
 			'color': 'mint',
-			'staticImage': 'cookie-pb.png',
+			'staticImage': 'cookie-pb.webp',
 			'style': 'transform: scale(1.01) translate3d(0px,3px,0)',
 			'name': 'Peanut butter & Nutelly',
 			'descr': 'classic chocolate cookie with peanut butter and nutella'
@@ -68,7 +68,7 @@ menuItems = {
 	],
 	'cookieDoughs': [
 		{
-			'staticImage': 'cookie-doh.png',
+			'staticImage': 'cookie-doh.webp',
 			'color': 'blue',
 			'name': 'Chocolate chip',
 			'descr': 'edible oatmeal chocolate chip cookie dough'
