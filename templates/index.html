@@ -186,14 +186,14 @@
 				
 				function sendForm (ev) {
 					ev.preventDefault();
-					const data = new URLSearchParams();
+					var data = {};
 					for (const pair of new FormData(document.getElementById('contact-form'))) {
-						data.append(pair[0], pair[1]);
+						data[pair[0]] = pair[1];
 					}
 					fetch('https://tjh0kpqu8k.execute-api.us-east-1.amazonaws.com/default/cfse', {
 						method: 'post',
 						mode: 'no-cors',
-						body: data,
+						body: JSON.stringify(data),
 						headers: {'Content-type': 'application/json;charset=UTF-8'}
 					});
 					toggleFormThankyou();
