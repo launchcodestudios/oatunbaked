@@ -190,11 +190,10 @@
 					for (const pair of new FormData(document.getElementById('contact-form'))) {
 						data[pair[0]] = pair[1];
 					}
-					fetch('https://tjh0kpqu8k.execute-api.us-east-1.amazonaws.com/default/cfse', {
-						method: 'post',
+					var f = fetch('https://tjh0kpqu8k.execute-api.us-east-1.amazonaws.com/default/cfse', {
 						mode: 'no-cors',
+						method: 'post',
 						body: JSON.stringify(data),
-						headers: {'Content-type': 'application/json;charset=UTF-8'}
 					});
 					toggleFormThankyou();
 					setTimeout(toggleFormThankyou, 4000);
