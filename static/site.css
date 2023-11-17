@@ -32,3 +32,8 @@
 .bg-cookie-blue {
 	background: url('img/cookie-blue.webp') 0 0 / 100% no-repeat;
 }
+
+.hover-b--light-mint:focus,
+.hover-b--light-mint:hover {
+	border-color: var(--light-mint);
+}
