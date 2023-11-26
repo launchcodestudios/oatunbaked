@@ -32,6 +32,13 @@ def sitemap():
 	generateFile(ENV, fileName, {})
 	return send_from_directory('build', fileName)
 
+@app.route('/robots.txt')
+def robots():
+		fileName = 'robots.txt'
+		generateFile(ENV, fileName, {})
+		return send_from_directory('build', fileName)
+	
+
 	
 # Only used for dev. Prod is served as flat files from /build/.
 if __name__ == "__main__":
