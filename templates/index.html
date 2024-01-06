@@ -195,7 +195,7 @@
 						data[pair[0]] = pair[1];
 					}
 					var f = fetch('https://tjh0kpqu8k.execute-api.us-east-1.amazonaws.com/default/cfse', {
-						mode: 'no-cors',
+						mode: 'cors',
 						method: 'post',
 						body: JSON.stringify(data),
 					});
