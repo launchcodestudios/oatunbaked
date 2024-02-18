@@ -13,6 +13,11 @@
 	opacity: 0;
 }
 
+.menu-item:focus .cookie-cover.disable-hover,
+.menu-item:hover .cookie-cover.disable-hover {
+	opacity: 1;
+}
+
 .bg-cookie-oat {
 	background: url('img/cookie-oat.webp') 0 0 / 100% no-repeat;
 }

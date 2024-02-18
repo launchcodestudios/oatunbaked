@@ -2,8 +2,8 @@ menuItems = {
 	'cookies': [
 		{
 			'color': 'oat',
-			'name': 'Vanilla',
-			'descr': 'vanilla and white chocolate cookie with white chocolate drizzle'
+			'name': 'Sugar cookie',
+			'descr': 'vanilla oatmeal sugar cookie with sprinkles'
 		},
 		{
 			'color': 'mint',
@@ -35,8 +35,8 @@ menuItems = {
 		},
 		{
 			'color': 'oat',
-			'name': 'Chocolate toffee',
-			'descr': 'semisweet chocolate cookie with toffee bits and toffee topping'
+			'name': 'Lemon drop',
+			'descr': 'lemon oatmeal cookie with vanilla cream frosting'
 		},
 		{
 			'color': 'mint',
@@ -45,25 +45,34 @@ menuItems = {
 		},
 		{
 			'color': 'oat',
-			'name': 'Hot chocolate',
-			'descr': 'milk chocolate cookie with mini marshmallows'
+			'name': 'Cocoa & cream',
+			'descr': 'chocolate fudge oatmeal cookie with vanilla cream frosting'
+		},
+		{
+			'color': 'mint',
+			'name': 'Cherry bomb',
+			'descr': 'dark chocolate cherry oatmeal cookie with dried cherries'
 		},
 	],
 	'floofs': [
 		{
 			'color': 'armygreen',
-			'name': 'Confetti floof',
-			'descr': 'vanilla cookies with sprinkle filling'
+			'name': 'Vanilla bean krispie',
+			'descr': '',
+			'staticImage': 'treat-vanilla-krispie.webp',
+			'photoOnly': True,
 		},
 		{
 			'color': 'armygreen',
-			'name': 'Lemon floof',
-			'descr': 'vanilla cookies with lemon filling'
+			'name': 'S\'mores sandwich',
+			'descr': '',
+			'photoOnly': True,
 		},
 		{
 			'color': 'armygreen',
 			'name': 'Seasonal floof',
-			'descr': 'seasonal'
+			'descr': '',
+			'photoOnly': True,
 		},
 	],
 	'cookieDoughs': [
