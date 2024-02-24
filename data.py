@@ -11,7 +11,7 @@ menuItems = {
 			'descr': 'milk chocolate cookie with marshmallows and grahams'
 		},
 		{
-			'staticImage': 'cookie-pumpkin-pie.webp',
+			'staticImage': 'photos/cookie-pumpkin-pie.webp',
 			'color': 'oat',
 			'name': 'Pumpkin pie',
 			'descr': 'vanilla pumpkin cookie with cinnamon and spice topped with a candy corn'
@@ -28,13 +28,14 @@ menuItems = {
 		},
 		{
 			'color': 'mint',
-			'staticImage': 'cookie-pb.webp',
+			'staticImage': 'photos/cookie-pb.webp',
 			'style': 'transform: scale(1.01) translate3d(0px,3px,0)',
 			'name': 'Peanut butter & Nutelly',
 			'descr': 'classic chocolate cookie with peanut butter and nutella'
 		},
 		{
 			'color': 'oat',
+			'staticImage': 'photos/cookie-lemon-drop.webp',
 			'name': 'Lemon drop',
 			'descr': 'lemon oatmeal cookie with vanilla cream frosting'
 		},
@@ -45,11 +46,13 @@ menuItems = {
 		},
 		{
 			'color': 'oat',
+			'staticImage': 'photos/cookie-cocoa-cream.webp',
 			'name': 'Cocoa & cream',
 			'descr': 'chocolate fudge oatmeal cookie with vanilla cream frosting'
 		},
 		{
 			'color': 'mint',
+			'staticImage': 'photos/cookie-cherry-bomb.webp',
 			'name': 'Cherry bomb',
 			'descr': 'dark chocolate cherry oatmeal cookie with dried cherries'
 		},
@@ -59,7 +62,7 @@ menuItems = {
 			'color': 'armygreen',
 			'name': 'Vanilla bean krispie',
 			'descr': '',
-			'staticImage': 'treat-vanilla-krispie.webp',
+			'staticImage': 'photos/treat-vanilla-krispie.webp',
 			'photoOnly': True,
 		},
 		{
@@ -77,7 +80,7 @@ menuItems = {
 	],
 	'cookieDoughs': [
 		{
-			'staticImage': 'cookie-doh.webp',
+			'staticImage': 'photos/cookie-doh.webp',
 			'color': 'blue',
 			'name': 'Chocolate chip',
 			'descr': 'edible oatmeal chocolate chip cookie dough'
