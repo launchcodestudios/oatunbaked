@@ -7,8 +7,9 @@ menuItems = {
 		},
 		{
 			'color': 'mint',
-			'name': 'S\'mores',
-			'descr': 'milk chocolate cookie with marshmallows and grahams'
+			'staticImage': 'photos/cookie-moonpie.webp',
+			'name': 'Moonpie',
+			'descr': 'milk chocolate cookie with lots of marshmallows'
 		},
 		{
 			'staticImage': 'photos/cookie-pumpkin-pie.webp',
@@ -42,11 +43,12 @@ menuItems = {
 		{
 			'color': 'mint',
 			'name': 'Chocolate coconut',
+			'staticImage': 'photos/cookie-chocolate-coconut.webp',
 			'descr': 'semisweet chocolate cookie with coconut flakes and coconut topping'
 		},
 		{
 			'color': 'oat',
-			'staticImage': 'photos/cookie-cocoa-cream.webp',
+			'staticImage': 'photos/cookie-chocolate-cream.webp',
 			'name': 'Cocoa & cream',
 			'descr': 'chocolate fudge oatmeal cookie with vanilla cream frosting'
 		},
@@ -68,12 +70,13 @@ menuItems = {
 		{
 			'color': 'armygreen',
 			'name': 'S\'mores sandwich',
+			'staticImage': 'photos/smores-bar.webp',
 			'descr': '',
 			'photoOnly': True,
 		},
 		{
 			'color': 'armygreen',
-			'name': 'Seasonal floof',
+			'name': 'Seasonal',
 			'descr': '',
 			'photoOnly': True,
 		},
