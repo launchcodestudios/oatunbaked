@@ -94,7 +94,7 @@ menuItems = {
 			'omitRollover': True,
 			'color': 'pink',
 			'name': 'Apple pie slushie',
-			'descr': 'apple pie filling in apple slushie, topped with strussel crumble'
+			'descr': 'apple pie filling in apple slushie, topped with streusel crumble'
 		},
 		{
 			'omitRollover': True,
