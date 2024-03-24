@@ -2,6 +2,7 @@ menuItems = {
 	'cookies': [
 		{
 			'color': 'oat',
+			'staticImage': 'photos/cookie-sugar.webp',
 			'name': 'Sugar cookie',
 			'descr': 'vanilla oatmeal sugar cookie with sprinkles'
 		},
