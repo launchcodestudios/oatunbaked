@@ -42,3 +42,24 @@
 .hover-b--light-mint:hover {
 	border-color: var(--light-mint);
 }
+
+.show-hide {
+	overflow-y: hidden;
+	max-height: 440px;
+	transition: all .3s var(--animation-curve);
+}
+
+.closed .show-hide {
+	max-height: 0;
+}
+
+
+.closed .collapse {
+	display: none;
+}
+.expand {
+	display: none;
+}
+.closed .expand {
+	display: inherit;
+}
