@@ -98,7 +98,7 @@ menuItems = {
 			'descr': 'apple pie filling in apple slushie, topped with streusel crumble'
 		},
 		{
-			'omitRollover': True,
+			'staticImage': 'photos/drink-frozen-chocolate.webp',
 			'color': 'pink',
 			'name': 'Frozen hot chocolate',
 			'descr': 'chocolate frapé topped with whipped cream & chocolate shavings'
