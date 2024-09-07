@@ -63,9 +63,9 @@ menuItems = {
 	'floofs': [
 		{
 			'color': 'armygreen',
-			'name': 'Vanilla bean krispie',
+			'name': 'Krispie treats',
 			'descr': '',
-			'staticImage': 'photos/treat-vanilla-krispie.webp',
+			'staticImage': 'photos/treat-krispie.webp',
 			'photoOnly': True,
 		},
 		{
